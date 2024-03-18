@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="DRegistrationForm.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+   <title>Driver Registration </title>
+</head>
+<body>
+    <div class="container">
+        <header>Driver Registration</header>
+
+        <form id="registrationForm" action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="mobileNumber">Mobile Number</label>
+                            <input type="tel" id="mobileNumber" placeholder="Enter mobile number" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Motorcycle's Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label for="motorcycleName">Motorcycle's Name</label>
+                            <input type="text" id="motorcycleName" placeholder="Motorcycle's name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="registrationID">Registration ID</label>
+                            <input type="text" id="registrationID" placeholder="Reg. ID" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="issuedDate">Issued Date</label>
+                            <input type="date" id="issuedDate" required>
+                        </div>
+                    </div>
+
+                    <div class="details ID">
+                        <span class="title">Joining Date</span>
+    
+                        <div class="fields">
+                            <div class="input-field">
+                                <label for="startDate">Start</label>
+                                <input type="date" id="startDate" placeholder="Starting date" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label for="endDate">End</label>
+                                <input type="date" id="endDate" placeholder="End date" required>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit">
+                        <span class="btnText">Submit</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div> 
+            </div>
+        </form>
+    </div>
+
+    <script src="DRegistrationForm.js"></script>
+</body>
+</html>

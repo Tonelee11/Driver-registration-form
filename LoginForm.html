@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+  <link rel="stylesheet" type="text/css" href="Boda.css">
+</head>
+<body>
+<div class="container">
+  <h3> Welcome Dear  <img src="Boda.png" alt="Icon" style="height: 1em; vertical-align: middle;"></h3>
+  <form id="bodaForm" action="htpps//:www.anthoncharles.com">
+    <div class="field email-field">
+      <div class="input-field">
+        <input type="email" placeholder="Enter your email" class="email" />
+      </div>
+      <span class="error email-error">
+        <i class="bx bx-error-circle error-icon"></i>
+        <p class="error-text">Please enter a valid email</p>
+      </span>
+    </div>
+    <div class="field enter-Pnumber">
+      <div class="input-field">
+        <input
+          type="text"
+          placeholder="Enter Pnumber"
+          class="Pnumber"
+        />
+      </div>
+      <span class="error Pnumber-error">
+        <p class="error-text">
+          Please enter at least 8 characters with numbers only (0-9)
+        </p>
+      </span>
+    </div>
+    <div class="field destination-field">
+      <div class="input-field">
+        <input type="text" placeholder="Destination area" class="destination" />
+      </div>
+      <span class="error destination-error">
+        <i class="bx bx-error-circle error-icon"></i>
+        <p class="error-text">Please enter detination area</p>
+      </span>
+    </div>
+    <div class="field button-field input-field">
+      <input type="submit" value="Request boda" />
+    </div>
+  </form>
+</div>
+
+<script src="loginform.js"></script>
+</body>
+</html>
